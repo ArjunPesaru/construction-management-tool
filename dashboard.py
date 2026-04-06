@@ -492,7 +492,7 @@ NAV = [
 sidebar = html.Div([
     html.Div([
         html.Img(src="/assets/logo.png",
-                 style={"width":"90px","height":"90px","borderRadius":"50%",
+                 style={"width":"130px","height":"130px","borderRadius":"50%",
                         "display":"block","margin":"0 auto 8px auto",
                         "border":"2px solid rgba(255,255,255,0.15)"}),
         html.Div("Project Intelligence Platform",
@@ -535,6 +535,13 @@ app.layout = html.Div([
     sidebar,
 
     html.Div([
+        # Header logo
+        html.Div([
+            html.Img(src="/assets/header_logo.png",
+                     style={"height":"60px","display":"block"}),
+        ], style={"marginBottom":"14px","paddingBottom":"12px",
+                  "borderBottom":"1px solid #EEEEEE"}),
+
         # Filter bar
         html.Div([
             html.Div([
