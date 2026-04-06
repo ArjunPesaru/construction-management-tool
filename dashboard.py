@@ -538,9 +538,9 @@ app.layout = html.Div([
         # Header logo
         html.Div([
             html.Img(src="/assets/header_logo.png",
-                     style={"height":"60px","display":"block"}),
+                     style={"height":"80px","display":"block","margin":"0 auto"}),
         ], style={"marginBottom":"14px","paddingBottom":"12px",
-                  "borderBottom":"1px solid #EEEEEE"}),
+                  "borderBottom":"1px solid #EEEEEE","textAlign":"center"}),
 
         # Filter bar
         html.Div([
