@@ -535,11 +535,17 @@ app.layout = html.Div([
     sidebar,
 
     html.Div([
-        # Header logo
+        # Header logo + demo badge
         html.Div([
             html.Img(src="/assets/header_logo.png",
                      style={"height":"80px","display":"block","margin":"0 auto"}),
-        ], style={"marginBottom":"14px","paddingBottom":"12px",
+            html.Div("⚠️ For Demo Purpose Only · Built by Arjun Pesaru",
+                     style={"position":"absolute","top":"16px","right":"20px",
+                            "fontSize":"11px","color":MUT,"fontStyle":"italic",
+                            "fontWeight":"600","background":"#FFF8E7",
+                            "border":"1px solid #FFD700","borderRadius":"20px",
+                            "padding":"4px 12px"}),
+        ], style={"position":"relative","marginBottom":"14px","paddingBottom":"12px",
                   "borderBottom":"1px solid #EEEEEE","textAlign":"center"}),
 
         # Filter bar
